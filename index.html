@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> My Tasbih Counter</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container">
 
-        <h1>Tasbih Counter</h1>
+        <h1>🌤 Weather App</h1>
 
-        <h2 id="count">0</h2>
+        <div class="search">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+            <button onclick="getWeather()">Search</button>
+        </div>
 
-        <button onclick="increase()">Count</button>
+        <p id="error"></p>
 
-        <button id="reset" onclick="reset()">Reset</button>
+        <div class="weather">
 
-        <p>Time: <span id="time">0</span> seconds</p>
+            <h2 id="city">City Name</h2>
+
+            <div id="icon">🌤️</div>
+
+            <h1 id="temp">--°C</h1>
+
+            <h3 id="condition">Weather Condition</h3>
+
+            <div class="details">
+
+                <div class="card">
+                    <h3>💧</h3>
+                    <p>Humidity</p>
+                    <h2 id="humidity">--%</h2>
+                </div>
+
+                <div class="card">
+                    <h3>💨</h3>
+                    <p>Wind Speed</p>
+                    <h2 id="wind">-- km/h</h2>
+                </div>
+
+                <div class="card">
+                    <h3>🌡️</h3>
+                    <p>Feels Like</p>
+                    <h2 id="feels">--°C</h2>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -25,3 +61,4 @@
 
 </body>
 </html>
+
