@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255,255,255,0.12);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 70%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0099cc;
+}
+
+#icon {
+    font-size: 75px;
+    margin: 15px;
+}
+
+#temp {
+    font-size: 55px;
+    margin: 10px;
+}
+
+#condition {
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1;
+    background: rgba(255,255,255,0.15);
+    padding: 15px 5px;
+    border-radius: 15px;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.card h2 {
+    font-size: 16px;
+}
+
+#error {
+    color: #ffaaaa;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 380px) {
+    .container {
+        padding: 18px;
+    }
+
+    .card {
+        padding: 12px 3px;
+    }
+
+    .card h2 {
+        font-size: 13px;
+    }
+}
